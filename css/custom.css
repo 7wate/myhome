@@ -1,0 +1,25 @@
+/* 全局样式：优化中文及系统字体显示 */
+body {
+  /* 根据设计需求设置基础字号与行高，中文建议行高设置在1.5～1.6之间 */
+  font-size: 18px;
+  line-height: 1.6;
+
+  /* 优化字体平滑显示，提高文字渲染质量 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+footer a {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 2px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.25s ease-in-out;
+}
+
+footer a:hover,
+footer a:focus {
+  background-size: 100% 2px;
+}
